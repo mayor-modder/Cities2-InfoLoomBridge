@@ -1,0 +1,6 @@
+<PublishConfiguration>
+  <DisplayName>InfoLoom Bridge</DisplayName>
+  <ShortDescription>Exports selected InfoLoom data to a local JSON snapshot for external tools.</ShortDescription>
+  <Version>1.0.0</Version>
+  <GameVersion>1.5.7f1</GameVersion>
+</PublishConfiguration>

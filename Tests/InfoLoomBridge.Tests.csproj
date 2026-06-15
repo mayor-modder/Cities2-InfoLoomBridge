@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props" />
+
+	<ItemGroup>
+		<ProjectReference Include="..\InfoLoomBridge.csproj" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+		<PackageReference Include="System.Text.Json" Version="8.0.5" />
+		<PackageReference Include="xunit" Version="2.9.0" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="3.0.0">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="Game">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="Colossal.Core">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="Colossal.Logging">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="Colossal.IO.AssetDatabase">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="Unity.Burst">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="Unity.Collections">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="Unity.Entities">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="netstandard">
+			<HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\netstandard.dll</HintPath>
+			<Private>true</Private>
+		</Reference>
+	</ItemGroup>
+</Project>
