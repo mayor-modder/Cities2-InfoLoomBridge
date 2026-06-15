@@ -24,7 +24,9 @@ Top-level payload groups include:
 
 ## Compatibility
 
-This build targets Cities: Skylines II 1.5.7f1 and supports local or subscribed InfoLoom/InfoLoom Two assemblies with versions from 1.0.0 up to, but not including, 2.0.0.
+InfoLoomBridge is built with the local Cities: Skylines II modding toolchain and checks for local, subscribed, or Paradox Mods cached InfoLoom/InfoLoom Two assemblies at runtime.
+
+If InfoLoom is missing or rejected by the compatibility check, the bridge still writes `latest.json` with `status: "error"` and a diagnostic `message`.
 
 ## Installation
 

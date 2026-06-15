@@ -2,7 +2,7 @@
 
 These instructions assume you downloaded the GitHub source zip and extracted it under your Downloads folder.
 
-PowerShell and Command Prompt use different environment variable syntax:
+PowerShell uses different environment variable syntax than Command Prompt:
 
 - PowerShell: `$HOME` or `$env:USERPROFILE`
 - Command Prompt: `%USERPROFILE%`
@@ -62,15 +62,3 @@ $snapshot = Get-Content -Raw -LiteralPath $latest | ConvertFrom-Json
 ```
 
 For a working bridge, `status` should be `ok`. If `status` is `error`, read the `message` field in `latest.json`.
-
-## Command Prompt alternative
-
-If you are using Command Prompt (`cmd.exe`), run the project commands from the folder that contains `InfoLoomBridge.csproj`:
-
-```bat
-cd /d "%USERPROFILE%\Downloads\Cities2-InfoLoomBridge-main\Cities2-InfoLoomBridge-main"
-set DOTNET_ROLL_FORWARD=Major
-rmdir /s /q obj 2>nul
-rmdir /s /q bin 2>nul
-dotnet build InfoLoomBridge.csproj -c Release -p:LangVersion=latest
-```

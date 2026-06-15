@@ -48,7 +48,7 @@
 			<Private>true</Private>
 		</Reference>
 		<Reference Include="netstandard">
-			<HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\netstandard.dll</HintPath>
+			<HintPath>$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\netstandard.dll</HintPath>
 			<Private>true</Private>
 		</Reference>
 	</ItemGroup>
