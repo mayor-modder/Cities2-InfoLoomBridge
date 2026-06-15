@@ -1,0 +1,11 @@
+bin/
+obj/
+Library/
+.vs/
+TestResults/
+*.user
+*.suo
+*.cache
+*.log
+*.vspscc
+*.vssscc

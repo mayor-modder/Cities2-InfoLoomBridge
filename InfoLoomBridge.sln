@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoLoomBridge", "InfoLoomBridge.csproj", "{6C1B800A-B7A2-4C01-8A9B-3EDA94D3AEF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoLoomBridge.Tests", "Tests\InfoLoomBridge.Tests.csproj", "{9AA77B30-0A5E-4466-8EFD-61535F65A82A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C1B800A-B7A2-4C01-8A9B-3EDA94D3AEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1B800A-B7A2-4C01-8A9B-3EDA94D3AEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1B800A-B7A2-4C01-8A9B-3EDA94D3AEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1B800A-B7A2-4C01-8A9B-3EDA94D3AEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA77B30-0A5E-4466-8EFD-61535F65A82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA77B30-0A5E-4466-8EFD-61535F65A82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA77B30-0A5E-4466-8EFD-61535F65A82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA77B30-0A5E-4466-8EFD-61535F65A82A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
